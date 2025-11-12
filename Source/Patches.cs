@@ -1,6 +1,6 @@
 ﻿using HarmonyLib;
 
-namespace ExampleMod;
+namespace EnduringJiMod;
 
 [HarmonyPatch]
 public class Patches {
