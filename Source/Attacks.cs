@@ -5,7 +5,8 @@ using UnityEngine;
 
 namespace EnduringJiMod;
 internal class Attacks {
-    private string jiBossPath = "A10S5/Room/Boss And Environment Binder/General Boss Fight FSM Object 姬 Variant/FSM Animator/LogicRoot/---Boss---/BossShowHealthArea/";
+    private string jiBossPath = "A10S5/Room/Boss And Environment Binder/General Boss Fight FSM Object 姬 Variant/FSM Animator/LogicRoot/---Boss---/BossShowHealthArea/StealthGameMonster_Boss_Jee";
+    private string jiBossAttacksPath = "/States/Attacks";
 
     private string _1_DivinationFreeZone = "[1]Divination Free Zone"; //Spin 3 options in a circle, will select a divination at random after a couple of seconds
     private string _2_FlyingProjectiles = "[2][Short]Flying Projectiles"; //Fires 2 swords, attack yi, loop back, attack Yi
