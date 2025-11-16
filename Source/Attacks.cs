@@ -4,8 +4,10 @@ using System.Text;
 using UnityEngine;
 
 namespace EnduringJiMod;
+
+using static EnduringJiGlobalReferences;
+
 internal class Attacks {
-    private string jiBossPath = "A10S5/Room/Boss And Environment Binder/General Boss Fight FSM Object 姬 Variant/FSM Animator/LogicRoot/---Boss---/BossShowHealthArea/StealthGameMonster_Boss_Jee";
     private string jiBossAttacksPath = "States/Attacks";
 
     private string _1_DivinationFreeZone = "[1]Divination Free Zone"; //Spin 3 options in a circle, will select a divination at random after a couple of seconds
@@ -45,21 +47,21 @@ internal class Attacks {
     BossGeneralState _16_DivinationJumpKicked_BGS = null;
 
     public void GetAttackGameObjects() {
-        _1_DivinationFreeZone_BGS = GameObject.Find($"{jiBossPath}/{jiBossAttacksPath}/{_1_DivinationFreeZone}").GetComponent<BossGeneralState>();
-        _2_FlyingProjectiles_BGS = GameObject.Find($"{jiBossPath}/{jiBossAttacksPath}/{_2_FlyingProjectiles}").GetComponent<BossGeneralState>();
-        _3_BlackHoleAttack_BGS = GameObject.Find($"{jiBossPath}/{jiBossAttacksPath}/{_3_BlackHoleAttack}").GetComponent<BossGeneralState>();
-        _4_SetLaserAltarEnvironment_BGS = GameObject.Find($"{jiBossPath}/{jiBossAttacksPath}/{_4_SetLaserAltarEnvironment}").GetComponent<BossGeneralState>();
-        _5_SuckSword_BGS = GameObject.Find($"{jiBossPath}/{jiBossAttacksPath}/{_5_SuckSword}").GetComponent<BossGeneralState>();
-        _6_Teleport3SwordSmash_BGS = GameObject.Find($"{jiBossPath}/{jiBossAttacksPath}/{_6_Teleport3SwordSmash}").GetComponent<BossGeneralState>();
-        _7_SwordBlizzard_BGS = GameObject.Find($"{jiBossPath}/{jiBossAttacksPath}/{_7_SwordBlizzard}").GetComponent<BossGeneralState>();
-        _8_DivinationFreeZone_EndLessLoop_BGS = GameObject.Find($"{jiBossPath}/{jiBossAttacksPath}/{_8_DivinationFreeZone_EndLessLoop}").GetComponent<BossGeneralState>();
-        _9_GroundSword_BGS = GameObject.Find($"{jiBossPath}/{jiBossAttacksPath}/{_9_GroundSword}").GetComponent<BossGeneralState>();
-        _10_SmallBlackHole_BGS = GameObject.Find($"{jiBossPath}/{jiBossAttacksPath}/{_10_SmallBlackHole}").GetComponent<BossGeneralState>();
-        _11_ShorFlyingSword_BGS = GameObject.Find($"{jiBossPath}/{jiBossAttacksPath}/{_11_ShorFlyingSword}").GetComponent<BossGeneralState>();
-        _12_QuickHorizontalDoubleSword_BGS = GameObject.Find($"{jiBossPath}/{jiBossAttacksPath}/{_12_QuickHorizontalDoubleSword}").GetComponent<BossGeneralState>();
-        _13_QuickTeleportSword_BGS = GameObject.Find($"{jiBossPath}/{jiBossAttacksPath}/{_13_QuickTeleportSword}").GetComponent<BossGeneralState>();
-        _14_LaserAltarCircle_BGS = GameObject.Find($"{jiBossPath}/{jiBossAttacksPath}/{_14_LaserAltarCircle}").GetComponent<BossGeneralState>();
-        _15_HealthAltar_BGS = GameObject.Find($"{jiBossPath}/{jiBossAttacksPath}/{_15_HealthAltar}").GetComponent<BossGeneralState>();
-        _16_DivinationJumpKicked_BGS = GameObject.Find($"{jiBossPath}/{jiBossAttacksPath}/{_16_DivinationJumpKicked}").GetComponent<BossGeneralState>();
+        _1_DivinationFreeZone_BGS = GameObject.Find($"{JI_BOSS_PATH}/{jiBossAttacksPath}/{_1_DivinationFreeZone}").GetComponent<BossGeneralState>();
+        _2_FlyingProjectiles_BGS = GameObject.Find($"{JI_BOSS_PATH}/{jiBossAttacksPath}/{_2_FlyingProjectiles}").GetComponent<BossGeneralState>();
+        _3_BlackHoleAttack_BGS = GameObject.Find($"{JI_BOSS_PATH}/{jiBossAttacksPath}/{_3_BlackHoleAttack}").GetComponent<BossGeneralState>();
+        _4_SetLaserAltarEnvironment_BGS = GameObject.Find($"{JI_BOSS_PATH}/{jiBossAttacksPath}/{_4_SetLaserAltarEnvironment}").GetComponent<BossGeneralState>();
+        _5_SuckSword_BGS = GameObject.Find($"{JI_BOSS_PATH}/{jiBossAttacksPath}/{_5_SuckSword}").GetComponent<BossGeneralState>();
+        _6_Teleport3SwordSmash_BGS = GameObject.Find($"{JI_BOSS_PATH}/{jiBossAttacksPath}/{_6_Teleport3SwordSmash}").GetComponent<BossGeneralState>();
+        _7_SwordBlizzard_BGS = GameObject.Find($"{JI_BOSS_PATH}/{jiBossAttacksPath}/{_7_SwordBlizzard}").GetComponent<BossGeneralState>();
+        _8_DivinationFreeZone_EndLessLoop_BGS = GameObject.Find($"{JI_BOSS_PATH}/{jiBossAttacksPath}/{_8_DivinationFreeZone_EndLessLoop}").GetComponent<BossGeneralState>();
+        _9_GroundSword_BGS = GameObject.Find($"{JI_BOSS_PATH}/{jiBossAttacksPath}/{_9_GroundSword}").GetComponent<BossGeneralState>();
+        _10_SmallBlackHole_BGS = GameObject.Find($"{JI_BOSS_PATH}/{jiBossAttacksPath}/{_10_SmallBlackHole}").GetComponent<BossGeneralState>();
+        _11_ShorFlyingSword_BGS = GameObject.Find($"{JI_BOSS_PATH}/{jiBossAttacksPath}/{_11_ShorFlyingSword}").GetComponent<BossGeneralState>();
+        _12_QuickHorizontalDoubleSword_BGS = GameObject.Find($"{JI_BOSS_PATH}/{jiBossAttacksPath}/{_12_QuickHorizontalDoubleSword}").GetComponent<BossGeneralState>();
+        _13_QuickTeleportSword_BGS = GameObject.Find($"{JI_BOSS_PATH}/{jiBossAttacksPath}/{_13_QuickTeleportSword}").GetComponent<BossGeneralState>();
+        _14_LaserAltarCircle_BGS = GameObject.Find($"{JI_BOSS_PATH}/{jiBossAttacksPath}/{_14_LaserAltarCircle}").GetComponent<BossGeneralState>();
+        _15_HealthAltar_BGS = GameObject.Find($"{JI_BOSS_PATH}/{jiBossAttacksPath}/{_15_HealthAltar}").GetComponent<BossGeneralState>();
+        _16_DivinationJumpKicked_BGS = GameObject.Find($"{JI_BOSS_PATH}/{jiBossAttacksPath}/{_16_DivinationJumpKicked}").GetComponent<BossGeneralState>();
     }
 }
