@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
 
-namespace EnduringJiMod;
+namespace EnduringJiMod.Gameplay;
 
 using static EnduringJiGlobalReferences;
 public class ProjectileShooters {
