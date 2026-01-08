@@ -28,6 +28,26 @@ internal class Attacks {
     private string _16_DivinationJumpKicked = "[16]Divination JumpKicked"; //Maybe it's when a divination is selected??
     //NOTE: The "Three Sword" divination just spawns 3 of the [short] attacks
 
+    //Animation Clip Names (in order)
+    /*
+     * "0_Divination Free Zone_01"
+     * "0_Attack02_Flying_Projectiles"
+     * "0_Attack03_GravityMove"
+     * "0_Attack04_LaserAltar"
+     * "0_Attack05_SuckSword"
+     * "0_Attack06_TeleportSword"
+     * "0_Attack07_SwordBlizzard"
+     * "0_Divination Free Zone_01_Loop"
+     * "0_Attack09_GroundSword"
+     * "0_Attack10_SmallBlackHole"
+     * "0_Attack11_ShortFlyingSword"
+     * "0_Attack12_QuickHorizontalDoubleSword"
+     * "0_Attack13_QuickHorizontalTeleportSword"
+     * "0_Attack14_CircleLaser"
+     * "0_Attack15_SummonGoodAltar"
+     * "0_Divination Free Zone_PlayerKicked"
+     */
+
     //Attack States
     BossGeneralState _1_DivinationFreeZone_BGS = null;
     BossGeneralState _2_FlyingProjectiles_BGS = null;
@@ -63,5 +83,9 @@ internal class Attacks {
         _14_LaserAltarCircle_BGS = GameObject.Find($"{JI_BOSS_PATH}/{jiBossAttacksPath}/{_14_LaserAltarCircle}").GetComponent<BossGeneralState>();
         _15_HealthAltar_BGS = GameObject.Find($"{JI_BOSS_PATH}/{jiBossAttacksPath}/{_15_HealthAltar}").GetComponent<BossGeneralState>();
         _16_DivinationJumpKicked_BGS = GameObject.Find($"{JI_BOSS_PATH}/{jiBossAttacksPath}/{_16_DivinationJumpKicked}").GetComponent<BossGeneralState>();
+    }
+
+    public void GetAnimClips() {
+
     }
 }

@@ -6,7 +6,7 @@ using UnityEngine;
 namespace EnduringJiMod.Gameplay;
 
 using static EnduringJiGlobalReferences;
-public class ProjectileShooters {
+internal class ProjectileShooters {
     private string projectileShootersPath = "MonsterCore/Animator(Proxy)/Animator/LogicRoot";
 
     //Projectile Shooter Paths
